@@ -1,0 +1,39 @@
+JWT - Authentication
+
+JWT stands for JSON Web Token
+
+Encryption - Converting data into binary from
+Decryption - Converting binary data back into its original form.
+
+Token is stored in hash mapping. 
+Hashing - It is used for mainly for storing password in the database.
+
+JWT - authentication :- 
+Having some algorithm token used for authentication and authorization between a client and a server.
+
+To use in java we use:-
+jwtService
+jwtUtil
+jwtTokenProvider
+
+
+JWT Utility Class
+public class JwtUtil {
+    // Create JWT Token
+    public String generateToken(String username) {
+        ...
+    }
+    // Read username from token
+    public String extractUsername(String token) {
+        ...
+    }
+    // Check whether token is valid
+    public boolean validateToken(String token) {
+        ...
+    }
+}
+
+String token = jwtUtil.generateToken("rahul@gmail.com");
+
+Payload - It is the input in the backend.
+
